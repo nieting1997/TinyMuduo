@@ -1,0 +1,7 @@
+基础类开发：
+    nocopy
+    log
+    time
+修改配置：
+    runcode 支持c11 在runcode.settings中增加c11
+    debug支持c11 在c_cpp中增加
