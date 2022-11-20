@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/TcpServer.cc.o -c /home/home/桌面/TinyMuduo/TcpServer.cc",
+  "file": "/home/home/桌面/TinyMuduo/TcpServer.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Logger.cc.o -c /home/home/桌面/TinyMuduo/Logger.cc",
+  "file": "/home/home/桌面/TinyMuduo/Logger.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Timestamp.cc.o -c /home/home/桌面/TinyMuduo/Timestamp.cc",
+  "file": "/home/home/桌面/TinyMuduo/Timestamp.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/EventLoop.cc.o -c /home/home/桌面/TinyMuduo/EventLoop.cc",
+  "file": "/home/home/桌面/TinyMuduo/EventLoop.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/InetAddress.cc.o -c /home/home/桌面/TinyMuduo/InetAddress.cc",
+  "file": "/home/home/桌面/TinyMuduo/InetAddress.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Channel.cc.o -c /home/home/桌面/TinyMuduo/Channel.cc",
+  "file": "/home/home/桌面/TinyMuduo/Channel.cc"
+}
+]
