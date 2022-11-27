@@ -150,6 +150,60 @@ Channel.cc.s:
 	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Channel.cc.s
 .PHONY : Channel.cc.s
 
+DefaultPoller.o: DefaultPoller.cc.o
+
+.PHONY : DefaultPoller.o
+
+# target to build an object file
+DefaultPoller.cc.o:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o
+.PHONY : DefaultPoller.cc.o
+
+DefaultPoller.i: DefaultPoller.cc.i
+
+.PHONY : DefaultPoller.i
+
+# target to preprocess a source file
+DefaultPoller.cc.i:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.i
+.PHONY : DefaultPoller.cc.i
+
+DefaultPoller.s: DefaultPoller.cc.s
+
+.PHONY : DefaultPoller.s
+
+# target to generate assembly for a file
+DefaultPoller.cc.s:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.s
+.PHONY : DefaultPoller.cc.s
+
+EPollPoller.o: EPollPoller.cc.o
+
+.PHONY : EPollPoller.o
+
+# target to build an object file
+EPollPoller.cc.o:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o
+.PHONY : EPollPoller.cc.o
+
+EPollPoller.i: EPollPoller.cc.i
+
+.PHONY : EPollPoller.i
+
+# target to preprocess a source file
+EPollPoller.cc.i:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EPollPoller.cc.i
+.PHONY : EPollPoller.cc.i
+
+EPollPoller.s: EPollPoller.cc.s
+
+.PHONY : EPollPoller.s
+
+# target to generate assembly for a file
+EPollPoller.cc.s:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EPollPoller.cc.s
+.PHONY : EPollPoller.cc.s
+
 EventLoop.o: EventLoop.cc.o
 
 .PHONY : EventLoop.o
@@ -231,6 +285,33 @@ Logger.cc.s:
 	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Logger.cc.s
 .PHONY : Logger.cc.s
 
+Poller.o: Poller.cc.o
+
+.PHONY : Poller.o
+
+# target to build an object file
+Poller.cc.o:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Poller.cc.o
+.PHONY : Poller.cc.o
+
+Poller.i: Poller.cc.i
+
+.PHONY : Poller.i
+
+# target to preprocess a source file
+Poller.cc.i:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Poller.cc.i
+.PHONY : Poller.cc.i
+
+Poller.s: Poller.cc.s
+
+.PHONY : Poller.s
+
+# target to generate assembly for a file
+Poller.cc.s:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Poller.cc.s
+.PHONY : Poller.cc.s
+
 TcpServer.o: TcpServer.cc.o
 
 .PHONY : TcpServer.o
@@ -297,6 +378,12 @@ help:
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
+	@echo "... DefaultPoller.o"
+	@echo "... DefaultPoller.i"
+	@echo "... DefaultPoller.s"
+	@echo "... EPollPoller.o"
+	@echo "... EPollPoller.i"
+	@echo "... EPollPoller.s"
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
@@ -306,6 +393,9 @@ help:
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... Poller.o"
+	@echo "... Poller.i"
+	@echo "... Poller.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"

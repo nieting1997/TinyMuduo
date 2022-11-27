@@ -11,6 +11,16 @@
 },
 {
   "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Poller.cc.o -c /home/home/桌面/TinyMuduo/Poller.cc",
+  "file": "/home/home/桌面/TinyMuduo/Poller.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o -c /home/home/桌面/TinyMuduo/DefaultPoller.cc",
+  "file": "/home/home/桌面/TinyMuduo/DefaultPoller.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Timestamp.cc.o -c /home/home/桌面/TinyMuduo/Timestamp.cc",
   "file": "/home/home/桌面/TinyMuduo/Timestamp.cc"
 },
@@ -28,5 +38,10 @@
   "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Channel.cc.o -c /home/home/桌面/TinyMuduo/Channel.cc",
   "file": "/home/home/桌面/TinyMuduo/Channel.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o -c /home/home/桌面/TinyMuduo/EPollPoller.cc",
+  "file": "/home/home/桌面/TinyMuduo/EPollPoller.cc"
 }
 ]

@@ -8,6 +8,19 @@ CMakeFiles/TinyMuduo.dir/Channel.cc.o: ../Logger.h
 CMakeFiles/TinyMuduo.dir/Channel.cc.o: ../Timestamp.h
 CMakeFiles/TinyMuduo.dir/Channel.cc.o: ../nocopyable.h
 
+CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o: ../DefaultPoller.cc
+CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o: ../Poller.h
+CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o: ../Timestamp.h
+CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o: ../nocopyable.h
+
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../Channel.h
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../EPollPoller.cc
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../EPollPoller.h
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../Logger.h
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../Poller.h
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../Timestamp.h
+CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../nocopyable.h
+
 CMakeFiles/TinyMuduo.dir/EventLoop.cc.o: ../EventLoop.cc
 
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o: ../InetAddress.cc
@@ -17,6 +30,12 @@ CMakeFiles/TinyMuduo.dir/Logger.cc.o: ../Logger.cc
 CMakeFiles/TinyMuduo.dir/Logger.cc.o: ../Logger.h
 CMakeFiles/TinyMuduo.dir/Logger.cc.o: ../Timestamp.h
 CMakeFiles/TinyMuduo.dir/Logger.cc.o: ../nocopyable.h
+
+CMakeFiles/TinyMuduo.dir/Poller.cc.o: ../Channel.h
+CMakeFiles/TinyMuduo.dir/Poller.cc.o: ../Poller.cc
+CMakeFiles/TinyMuduo.dir/Poller.cc.o: ../Poller.h
+CMakeFiles/TinyMuduo.dir/Poller.cc.o: ../Timestamp.h
+CMakeFiles/TinyMuduo.dir/Poller.cc.o: ../nocopyable.h
 
 CMakeFiles/TinyMuduo.dir/TcpServer.cc.o: ../TcpServer.cc
 

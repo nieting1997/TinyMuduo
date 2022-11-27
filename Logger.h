@@ -31,6 +31,7 @@
         char buf[1024] = {0}; \
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.log(buf); \
+        exit(-1); \
     } while (0)
 
 // 调试信息一般默认关闭，通过宏将其关闭
