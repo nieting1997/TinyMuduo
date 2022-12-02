@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/home/桌面/TinyMuduo/Channel.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/Channel.cc.o"
+  "/home/home/桌面/TinyMuduo/CurrentThread.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o"
   "/home/home/桌面/TinyMuduo/DefaultPoller.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o"
   "/home/home/桌面/TinyMuduo/EPollPoller.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o"
   "/home/home/桌面/TinyMuduo/EventLoop.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/EventLoop.cc.o"
