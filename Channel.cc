@@ -1,5 +1,5 @@
 #include "Channel.h"
-#include "EventLopp.h"
+#include "EventLoop.h"
 #include "Logger.h"
 
 #include <sys/epoll.h>
@@ -34,13 +34,13 @@ void Channel::tie(const std::shared_ptr<void>& obj)
 void Channel::update()
 {
     // 通过channel所属的eventloop，调用poller的相应方法，注册fd的event事件
-    // todo: add eventloop code
+    loop_->updateChannel(this);
 }
 
 // event loop删除所属channel
 void Channel::remove()
 {
-    // todo：add eventloop code
+    loop_->removeChannel(this);
 }
 
 void Channel::handleEvent(Timestamp receiveTime)
