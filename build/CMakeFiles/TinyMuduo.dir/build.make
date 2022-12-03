@@ -201,9 +201,33 @@ CMakeFiles/TinyMuduo.dir/EventLoop.cc.o.provides: CMakeFiles/TinyMuduo.dir/Event
 CMakeFiles/TinyMuduo.dir/EventLoop.cc.o.provides.build: CMakeFiles/TinyMuduo.dir/EventLoop.cc.o
 
 
+CMakeFiles/TinyMuduo.dir/Thread.cc.o: CMakeFiles/TinyMuduo.dir/flags.make
+CMakeFiles/TinyMuduo.dir/Thread.cc.o: ../Thread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TinyMuduo.dir/Thread.cc.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyMuduo.dir/Thread.cc.o -c /home/home/桌面/TinyMuduo/Thread.cc
+
+CMakeFiles/TinyMuduo.dir/Thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinyMuduo.dir/Thread.cc.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/home/桌面/TinyMuduo/Thread.cc > CMakeFiles/TinyMuduo.dir/Thread.cc.i
+
+CMakeFiles/TinyMuduo.dir/Thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyMuduo.dir/Thread.cc.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/home/桌面/TinyMuduo/Thread.cc -o CMakeFiles/TinyMuduo.dir/Thread.cc.s
+
+CMakeFiles/TinyMuduo.dir/Thread.cc.o.requires:
+
+.PHONY : CMakeFiles/TinyMuduo.dir/Thread.cc.o.requires
+
+CMakeFiles/TinyMuduo.dir/Thread.cc.o.provides: CMakeFiles/TinyMuduo.dir/Thread.cc.o.requires
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/Thread.cc.o.provides.build
+.PHONY : CMakeFiles/TinyMuduo.dir/Thread.cc.o.provides
+
+CMakeFiles/TinyMuduo.dir/Thread.cc.o.provides.build: CMakeFiles/TinyMuduo.dir/Thread.cc.o
+
+
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o: CMakeFiles/TinyMuduo.dir/flags.make
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o: ../InetAddress.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TinyMuduo.dir/InetAddress.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TinyMuduo.dir/InetAddress.cc.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyMuduo.dir/InetAddress.cc.o -c /home/home/桌面/TinyMuduo/InetAddress.cc
 
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/TinyMuduo.dir/InetAddress.cc.o.provides.build: CMakeFiles/TinyMuduo.d
 
 CMakeFiles/TinyMuduo.dir/Channel.cc.o: CMakeFiles/TinyMuduo.dir/flags.make
 CMakeFiles/TinyMuduo.dir/Channel.cc.o: ../Channel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TinyMuduo.dir/Channel.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TinyMuduo.dir/Channel.cc.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyMuduo.dir/Channel.cc.o -c /home/home/桌面/TinyMuduo/Channel.cc
 
 CMakeFiles/TinyMuduo.dir/Channel.cc.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/TinyMuduo.dir/Channel.cc.o.provides.build: CMakeFiles/TinyMuduo.dir/C
 
 CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o: CMakeFiles/TinyMuduo.dir/flags.make
 CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o: ../CurrentThread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o -c /home/home/桌面/TinyMuduo/CurrentThread.cc
 
 CMakeFiles/TinyMuduo.dir/CurrentThread.cc.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o.provides.build: CMakeFiles/TinyMuduo
 
 CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: CMakeFiles/TinyMuduo.dir/flags.make
 CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o: ../EPollPoller.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o -c /home/home/桌面/TinyMuduo/EPollPoller.cc
 
 CMakeFiles/TinyMuduo.dir/EPollPoller.cc.i: cmake_force
@@ -305,6 +329,7 @@ TinyMuduo_OBJECTS = \
 "CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o" \
 "CMakeFiles/TinyMuduo.dir/Timestamp.cc.o" \
 "CMakeFiles/TinyMuduo.dir/EventLoop.cc.o" \
+"CMakeFiles/TinyMuduo.dir/Thread.cc.o" \
 "CMakeFiles/TinyMuduo.dir/InetAddress.cc.o" \
 "CMakeFiles/TinyMuduo.dir/Channel.cc.o" \
 "CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o" \
@@ -319,13 +344,14 @@ TinyMuduo_EXTERNAL_OBJECTS =
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/Timestamp.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/EventLoop.cc.o
+../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/Thread.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/InetAddress.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/Channel.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/build.make
 ../lib/libTinyMuduo.so: CMakeFiles/TinyMuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../lib/libTinyMuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/home/桌面/TinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library ../lib/libTinyMuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TinyMuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -339,6 +365,7 @@ CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/Poller.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/Timestamp.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/EventLoop.cc.o.requires
+CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/Thread.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/InetAddress.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/Channel.cc.o.requires
 CMakeFiles/TinyMuduo.dir/requires: CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o.requires

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o"
   "CMakeFiles/TinyMuduo.dir/Timestamp.cc.o"
   "CMakeFiles/TinyMuduo.dir/EventLoop.cc.o"
+  "CMakeFiles/TinyMuduo.dir/Thread.cc.o"
   "CMakeFiles/TinyMuduo.dir/InetAddress.cc.o"
   "CMakeFiles/TinyMuduo.dir/Channel.cc.o"
   "CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o"

@@ -146,7 +146,7 @@ void EventLoop::handleRead()
     if (n != sizeof(one))
     {
         // 具体读了多少字节
-        LOG_ERROR("EventLoo::handleRead() reads %d bytes instead of 8", n);
+        LOG_ERROR("EventLoo::handleRead() reads %d bytes instead of 8", static_cast<int>(n));
     }
 }
 

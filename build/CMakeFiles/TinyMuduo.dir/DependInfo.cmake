@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/home/桌面/TinyMuduo/Logger.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/Logger.cc.o"
   "/home/home/桌面/TinyMuduo/Poller.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/Poller.cc.o"
   "/home/home/桌面/TinyMuduo/TcpServer.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/TcpServer.cc.o"
+  "/home/home/桌面/TinyMuduo/Thread.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/Thread.cc.o"
   "/home/home/桌面/TinyMuduo/Timestamp.cc" "/home/home/桌面/TinyMuduo/build/CMakeFiles/TinyMuduo.dir/Timestamp.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

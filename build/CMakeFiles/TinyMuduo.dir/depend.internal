@@ -4,12 +4,17 @@
 CMakeFiles/TinyMuduo.dir/Channel.cc.o
  /home/home/桌面/TinyMuduo/Channel.cc
  /home/home/桌面/TinyMuduo/Channel.h
- /home/home/桌面/TinyMuduo/EventLopp.h
+ /home/home/桌面/TinyMuduo/CurrentThread.h
+ /home/home/桌面/TinyMuduo/EventLoop.h
  /home/home/桌面/TinyMuduo/Logger.h
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
+CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o
+ /home/home/桌面/TinyMuduo/CurrentThread.cc
+ /home/home/桌面/TinyMuduo/CurrentThread.h
 CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o
  /home/home/桌面/TinyMuduo/DefaultPoller.cc
+ /home/home/桌面/TinyMuduo/EPollPoller.h
  /home/home/桌面/TinyMuduo/Poller.h
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
@@ -22,7 +27,14 @@ CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/EventLoop.cc.o
+ /home/home/桌面/TinyMuduo/Channel.h
+ /home/home/桌面/TinyMuduo/CurrentThread.h
  /home/home/桌面/TinyMuduo/EventLoop.cc
+ /home/home/桌面/TinyMuduo/EventLoop.h
+ /home/home/桌面/TinyMuduo/Logger.h
+ /home/home/桌面/TinyMuduo/Poller.h
+ /home/home/桌面/TinyMuduo/Timestamp.h
+ /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o
  /home/home/桌面/TinyMuduo/InetAddress.cc
  /home/home/桌面/TinyMuduo/InetAddress.h
@@ -39,6 +51,11 @@ CMakeFiles/TinyMuduo.dir/Poller.cc.o
  /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/TcpServer.cc.o
  /home/home/桌面/TinyMuduo/TcpServer.cc
+CMakeFiles/TinyMuduo.dir/Thread.cc.o
+ /home/home/桌面/TinyMuduo/CurrentThread.h
+ /home/home/桌面/TinyMuduo/Thread.cc
+ /home/home/桌面/TinyMuduo/Thread.h
+ /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/Timestamp.cc.o
  /home/home/桌面/TinyMuduo/Timestamp.cc
  /home/home/桌面/TinyMuduo/Timestamp.h
