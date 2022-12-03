@@ -46,6 +46,11 @@
 },
 {
   "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o -c /home/home/桌面/TinyMuduo/EventLoopThread.cc",
+  "file": "/home/home/桌面/TinyMuduo/EventLoopThread.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o -c /home/home/桌面/TinyMuduo/CurrentThread.cc",
   "file": "/home/home/桌面/TinyMuduo/CurrentThread.cc"
 },

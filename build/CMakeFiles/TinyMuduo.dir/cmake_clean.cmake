@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinyMuduo.dir/Thread.cc.o"
   "CMakeFiles/TinyMuduo.dir/InetAddress.cc.o"
   "CMakeFiles/TinyMuduo.dir/Channel.cc.o"
+  "CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o"
   "CMakeFiles/TinyMuduo.dir/CurrentThread.cc.o"
   "CMakeFiles/TinyMuduo.dir/EPollPoller.cc.o"
   "../lib/libTinyMuduo.pdb"

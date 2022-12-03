@@ -35,6 +35,14 @@ CMakeFiles/TinyMuduo.dir/EventLoop.cc.o
  /home/home/桌面/TinyMuduo/Poller.h
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o
+ /home/home/桌面/TinyMuduo/CurrentThread.h
+ /home/home/桌面/TinyMuduo/EventLoop.h
+ /home/home/桌面/TinyMuduo/EventLoopThread.cc
+ /home/home/桌面/TinyMuduo/EventLoopThread.h
+ /home/home/桌面/TinyMuduo/Thread.h
+ /home/home/桌面/TinyMuduo/Timestamp.h
+ /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o
  /home/home/桌面/TinyMuduo/InetAddress.cc
  /home/home/桌面/TinyMuduo/InetAddress.h

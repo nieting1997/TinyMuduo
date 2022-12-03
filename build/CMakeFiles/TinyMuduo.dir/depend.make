@@ -35,6 +35,14 @@ CMakeFiles/TinyMuduo.dir/EventLoop.cc.o: ../Poller.h
 CMakeFiles/TinyMuduo.dir/EventLoop.cc.o: ../Timestamp.h
 CMakeFiles/TinyMuduo.dir/EventLoop.cc.o: ../nocopyable.h
 
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../CurrentThread.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../EventLoop.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../EventLoopThread.cc
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../EventLoopThread.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../Thread.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../Timestamp.h
+CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o: ../nocopyable.h
+
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o: ../InetAddress.cc
 CMakeFiles/TinyMuduo.dir/InetAddress.cc.o: ../InetAddress.h
 

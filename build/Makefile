@@ -258,6 +258,33 @@ EventLoop.cc.s:
 	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EventLoop.cc.s
 .PHONY : EventLoop.cc.s
 
+EventLoopThread.o: EventLoopThread.cc.o
+
+.PHONY : EventLoopThread.o
+
+# target to build an object file
+EventLoopThread.cc.o:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.o
+.PHONY : EventLoopThread.cc.o
+
+EventLoopThread.i: EventLoopThread.cc.i
+
+.PHONY : EventLoopThread.i
+
+# target to preprocess a source file
+EventLoopThread.cc.i:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.i
+.PHONY : EventLoopThread.cc.i
+
+EventLoopThread.s: EventLoopThread.cc.s
+
+.PHONY : EventLoopThread.s
+
+# target to generate assembly for a file
+EventLoopThread.cc.s:
+	$(MAKE) -f CMakeFiles/TinyMuduo.dir/build.make CMakeFiles/TinyMuduo.dir/EventLoopThread.cc.s
+.PHONY : EventLoopThread.cc.s
+
 InetAddress.o: InetAddress.cc.o
 
 .PHONY : InetAddress.o
@@ -444,6 +471,9 @@ help:
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
