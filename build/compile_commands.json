@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Acceptor.cc.o -c /home/home/桌面/TinyMuduo/Acceptor.cc",
+  "file": "/home/home/桌面/TinyMuduo/Acceptor.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/EventLoopThreadPool.cc.o -c /home/home/桌面/TinyMuduo/EventLoopThreadPool.cc",
   "file": "/home/home/桌面/TinyMuduo/EventLoopThreadPool.cc"
 },
@@ -18,6 +23,11 @@
   "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Poller.cc.o -c /home/home/桌面/TinyMuduo/Poller.cc",
   "file": "/home/home/桌面/TinyMuduo/Poller.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Socket.cc.o -c /home/home/桌面/TinyMuduo/Socket.cc",
+  "file": "/home/home/桌面/TinyMuduo/Socket.cc"
 },
 {
   "directory": "/home/home/桌面/TinyMuduo/build",
