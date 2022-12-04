@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TinyMuduo.dir/TcpServer.cc.o"
+  "CMakeFiles/TinyMuduo.dir/EventLoopThreadPool.cc.o"
   "CMakeFiles/TinyMuduo.dir/Logger.cc.o"
   "CMakeFiles/TinyMuduo.dir/Poller.cc.o"
   "CMakeFiles/TinyMuduo.dir/DefaultPoller.cc.o"

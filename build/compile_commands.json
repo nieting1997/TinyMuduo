@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/home/桌面/TinyMuduo/build",
+  "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/EventLoopThreadPool.cc.o -c /home/home/桌面/TinyMuduo/EventLoopThreadPool.cc",
+  "file": "/home/home/桌面/TinyMuduo/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/home/桌面/TinyMuduo/build",
   "command": "/usr/bin/g++   -DTinyMuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/TinyMuduo.dir/Logger.cc.o -c /home/home/桌面/TinyMuduo/Logger.cc",
   "file": "/home/home/桌面/TinyMuduo/Logger.cc"
 },
