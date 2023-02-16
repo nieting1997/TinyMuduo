@@ -41,6 +41,9 @@
         "mutex": "cpp",
         "chrono": "cpp",
         "ctime": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }

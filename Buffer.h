@@ -77,6 +77,24 @@ public:
         }
     }
 
+    // 把[data, data+len]内存上的数据添加到Writable缓冲区当中
+    void append(const char* data, size_t len)
+    {
+        ensureWritableBytes(len);
+        std::copy(data, data+len, beginWrite());
+        writerIndex_ += len;
+    }
+
+    char* beginWrite()
+    {
+        return begin() + writerIndex_;
+    }
+
+    const  char* beginWrite() const
+    {
+        return begin() + writerIndex_;
+    }
+
     void makeSpace(size_t len)
     {
         if (writableBytes() + prependableBytes() < len + kCheapPrepend)
@@ -89,6 +107,9 @@ public:
             writerIndex_ = readerIndex_ + readable;
         }
     }
+
+    // 从fd上读取数据
+    ssize_t readFd(int fd, int* saveErrno);
 
 private:
     char* begin()
