@@ -32,7 +32,7 @@ void Socket::listen()
 int Socket::accept(InetAddress *peeraddr)
 {
     sockaddr_in addr;
-    socklen_t len;
+    socklen_t len = sizeof addr;
     bzero(&addr, sizeof(addr));
     int connfd = ::accept(sockfd_, (sockaddr*)&addr, &len);
     if (connfd >= 0)
