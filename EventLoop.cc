@@ -97,6 +97,7 @@ void EventLoop::loop()
         doPendingFunctors();
    }
    LOG_INFO("EventLoop %p stop looping.\n", this);
+  looping_ = false;
 }
 
 // 退出
