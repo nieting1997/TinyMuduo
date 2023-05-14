@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nocopyable.h"
+#include "noncopyable.h"
 #include "Thread.h"
 
 #include <functional>
@@ -10,21 +10,20 @@
 
 class EventLoop;
 
-class EventLoopThread : nocopyable
+class EventLoopThread : noncopyable
 {
 public:
-    using ThreadInitCallback = std::function<void(EventLoop*)>;
+    using ThreadInitCallback = std::function<void(EventLoop*)>; 
 
-    EventLoopThread(const ThreadInitCallback &cd = ThreadInitCallback(),
+    EventLoopThread(const ThreadInitCallback &cb = ThreadInitCallback(), 
         const std::string &name = std::string());
     ~EventLoopThread();
 
     EventLoop* startLoop();
-
 private:
     void threadFunc();
 
-    EventLoop* loop_;
+    EventLoop *loop_;
     bool exiting_;
     Thread thread_;
     std::mutex mutex_;

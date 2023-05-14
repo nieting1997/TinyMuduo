@@ -3,7 +3,7 @@
 
 #include <semaphore.h>
 
-std::atomic_int Thread::numCreated_{0};
+std::atomic_int Thread::numCreated_(0);
 
 Thread::Thread(ThreadFunc func, const std::string &name)
     : started_(false)
@@ -23,19 +23,22 @@ Thread::~Thread()
     }
 }
 
-void Thread::start()
+void Thread::start()  // 一个Thread对象，记录的就是一个新线程的详细信息
 {
     started_ = true;
     sem_t sem;
     sem_init(&sem, false, 0);
 
+    // 开启线程
     thread_ = std::shared_ptr<std::thread>(new std::thread([&](){
-        tid_ = CurrentThread::tid(); // 获取线程tid值
+        // 获取线程的tid值
+        tid_ = CurrentThread::tid();
         sem_post(&sem);
-        func_(); // 开启新线程，专门执行该线程函数
+        // 开启一个新线程，专门执行该线程函数
+        func_(); 
     }));
 
-    // 等待获取上面新创建的线程id(线程创建完再结束该函数)
+    // 这里必须等待获取上面新创建的线程的tid值
     sem_wait(&sem);
 }
 
@@ -51,7 +54,7 @@ void Thread::setDefaultName()
     if (name_.empty())
     {
         char buf[32] = {0};
-        snprintf(buf, sizeof(buf), "Thread%d", num);
+        snprintf(buf, sizeof buf, "Thread%d", num);
         name_ = buf;
     }
 }

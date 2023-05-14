@@ -1,5 +1,5 @@
 #pragma once
-#include "nocopyable.h"
+#include "noncopyable.h"
 
 #include <functional>
 #include <string>
@@ -9,22 +9,28 @@
 class EventLoop;
 class EventLoopThread;
 
-class EventLoopThreadPool : nocopyable
+class EventLoopThreadPool : noncopyable
 {
 public:
-    using ThreadInitCallback = std::function<void(EventLoop*)>;
-    EventLoopThreadPool(EventLoop* baseLoop_, const std::string &name);
+    using ThreadInitCallback = std::function<void(EventLoop*)>; 
+
+    EventLoopThreadPool(EventLoop *baseLoop, const std::string &nameArg);
     ~EventLoopThreadPool();
 
-    void setThreadNum(int numThreads) { numThreads_ = numThreads;}
+    void setThreadNum(int numThreads) { numThreads_ = numThreads; }
+
     void start(const ThreadInitCallback &cb = ThreadInitCallback());
-    // 如果工作在多线程中，baseloop默认通过轮询的方式分配channel给subloop
-    EventLoop* getNextLoop(); 
+
+    // 如果工作在多线程中，baseLoop_默认以轮询的方式分配channel给subloop
+    EventLoop* getNextLoop();
+
     std::vector<EventLoop*> getAllLoops();
+
     bool started() const { return started_; }
     const std::string name() const { return name_; }
 private:
-    EventLoop *baseLoop_;
+
+    EventLoop *baseLoop_; // EventLoop loop;  
     std::string name_;
     bool started_;
     int numThreads_;

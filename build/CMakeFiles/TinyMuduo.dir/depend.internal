@@ -3,13 +3,14 @@
 
 CMakeFiles/TinyMuduo.dir/Acceptor.cc.o
  /home/home/桌面/TinyMuduo/Acceptor.cc
- /home/home/桌面/TinyMuduo/Accpetor.h
+ /home/home/桌面/TinyMuduo/Acceptor.h
  /home/home/桌面/TinyMuduo/Channel.h
  /home/home/桌面/TinyMuduo/InetAddress.h
  /home/home/桌面/TinyMuduo/Logger.h
  /home/home/桌面/TinyMuduo/Socket.h
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
+ /home/home/桌面/TinyMuduo/noncopyable.h
 CMakeFiles/TinyMuduo.dir/Buffer.cc.o
  /home/home/桌面/TinyMuduo/Buffer.cc
  /home/home/桌面/TinyMuduo/Buffer.h
@@ -95,16 +96,13 @@ CMakeFiles/TinyMuduo.dir/TcpConnection.cc.o
  /home/home/桌面/TinyMuduo/Timestamp.h
  /home/home/桌面/TinyMuduo/nocopyable.h
 CMakeFiles/TinyMuduo.dir/TcpServer.cc.o
- /home/home/桌面/TinyMuduo/Accpetor.h
  /home/home/桌面/TinyMuduo/Buffer.h
  /home/home/桌面/TinyMuduo/Callbacks.h
- /home/home/桌面/TinyMuduo/Channel.h
  /home/home/桌面/TinyMuduo/CurrentThread.h
  /home/home/桌面/TinyMuduo/EventLoop.h
  /home/home/桌面/TinyMuduo/EventLoopThreadPool.h
  /home/home/桌面/TinyMuduo/InetAddress.h
  /home/home/桌面/TinyMuduo/Logger.h
- /home/home/桌面/TinyMuduo/Socket.h
  /home/home/桌面/TinyMuduo/TcpConnection.h
  /home/home/桌面/TinyMuduo/TcpServer.cc
  /home/home/桌面/TinyMuduo/TcpServer.h

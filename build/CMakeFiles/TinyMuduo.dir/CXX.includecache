@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/home/桌面/TinyMuduo/Acceptor.cc
-Accpetor.h
-/home/home/桌面/TinyMuduo/Accpetor.h
+Acceptor.h
+/home/home/桌面/TinyMuduo/Acceptor.h
 Logger.h
 /home/home/桌面/TinyMuduo/Logger.h
 InetAddress.h
@@ -24,9 +24,9 @@ errno.h
 unistd.h
 -
 
-/home/home/桌面/TinyMuduo/Accpetor.h
-nocopyable.h
-/home/home/桌面/TinyMuduo/nocopyable.h
+/home/home/桌面/TinyMuduo/Acceptor.h
+noncopyable.h
+/home/home/桌面/TinyMuduo/noncopyable.h
 Socket.h
 /home/home/桌面/TinyMuduo/Socket.h
 Channel.h
@@ -176,6 +176,8 @@ functional
 mutex
 -
 condition_variable
+-
+string
 -
 
 /home/home/桌面/TinyMuduo/EventLoopThreadPool.cc
@@ -383,4 +385,6 @@ string
 -
 
 /home/home/桌面/TinyMuduo/nocopyable.h
+
+/home/home/桌面/TinyMuduo/noncopyable.h
 

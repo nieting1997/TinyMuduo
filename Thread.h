@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nocopyable.h"
+#include "noncopyable.h"
 
 #include <functional>
 #include <thread>
@@ -9,7 +9,7 @@
 #include <string>
 #include <atomic>
 
-class Thread
+class Thread : noncopyable
 {
 public:
     using ThreadFunc = std::function<void()>;
@@ -21,11 +21,10 @@ public:
     void join();
 
     bool started() const { return started_; }
-    pid_t pid() const { return tid_; }
-    const std::string &name() const { return name_; }
+    pid_t tid() const { return tid_; }
+    const std::string& name() const { return name_; }
 
     static int numCreated() { return numCreated_; }
-
 private:
     void setDefaultName();
 

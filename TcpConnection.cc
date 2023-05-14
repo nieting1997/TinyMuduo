@@ -92,13 +92,12 @@ void TcpConnection::shutdown()
 
 void TcpConnection::shutdownInLoop()
 {
-    if (!channel_->isWriting()) // outputBuffer中的数据全部发送完成
-    {
-        socket_->shutdownWrite(); // 关闭写端
+    if (!channel_->isWriting()) {
+        socket_->shutdownWrite();
     }
 }
 
-void TcpConnection::sendInLoop(const void* data, size_t len) {
+ void TcpConnection::sendInLoop(const void* data, size_t len) {
     ssize_t nwrote = 0;
     size_t remaining = len;
     bool faultError = false;
@@ -146,7 +145,7 @@ void TcpConnection::sendInLoop(const void* data, size_t len) {
             channel_->enableWriting(); // must sign up
         }
     }
-}
+ }
 
  // 连接建立
 void TcpConnection::connectEstablished()
@@ -216,7 +215,7 @@ void TcpConnection::handleWrite()
 
 void TcpConnection::handleClose()
 {
-    LOG_INFO("TcpConnection::handleClose fd=%d state=%d \n", channel_->fd(), (int)state_);
+    //LOG_INFO("fd=%d state=%d \n", channel_->fd(), state_); Todo: bug???
     setState(kDisconnected);
     channel_->disableALL();
 
@@ -237,4 +236,3 @@ void TcpConnection::handleError()
     }
     LOG_ERROR("TcpConnection::handleError name:%s - SO_ERROR:%d \n", name_.c_str(), err);
 }
-

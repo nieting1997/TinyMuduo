@@ -2,8 +2,8 @@
 
 #include <iostream>
 #include <string>
-//#include <stdint.h>
 
+// 时间类
 class Timestamp
 {
 public:
