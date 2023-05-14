@@ -23,7 +23,6 @@ EPollPoller::EPollPoller(EventLoop *loop)
 
 EPollPoller::~EPollPoller()
 {
-    // todo: 找不到该函数
     ::close(epollfd_);
 }
 // 重写基类poller的抽象方法
@@ -38,7 +37,6 @@ Timestamp EPollPoller::poll(int timeoutMS, ChannelList *activeChannels)
 
     if (numEvents > 0)
     {
-        // TODO: debug
         LOG_INFO("%d events happened\n", numEvents);
         fillActiveChannels(numEvents, activeChannels);
         if (numEvents == events_.size()) {
