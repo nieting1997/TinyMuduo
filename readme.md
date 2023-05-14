@@ -9,6 +9,10 @@ muduo是陈硕开发的c++网络库。
 
 ![架构图](https://github.com/nieting1997/TinyMuduo/blob/085da027cbef3f4058edbbeb6d63e9b8acaf4710/picture/%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 
+## 使用方法
+* 编程实例见example
+* sudo bash ./autobuild.sh
+
 ## 压力测试
 
 ## 基础类
