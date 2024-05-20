@@ -19,18 +19,6 @@ muduo是陈硕开发的c++网络库。
   * EventLoop中封装了poller与channel，他不停调用poller中的poll方法来获取实际发生的事件(activeChannel)，然后调用activeChannel中保管的不同类型事件处理函数来处理实际发生的事件。
 * **Thread**
   * 通过面对对象的思想，对线程Thread类进行封装，用于之后eventloop和thread进行绑定。
-* **EventLoopThread**
-  * 
-* **Buffer**
-  * Buffer类封装了用户缓冲区，以及向其中读写数据等方法。
-![_buffer](https://github.com/nieting1997/TinyMuduo/blob/085da027cbef3f4058edbbeb6d63e9b8acaf4710/picture/_buffer.png)
-设计方法：
-1. 初始化状态。CheapPrepend记录整块数据的长度。
-2. 一段时间后，向buffer中写入数据。数据分区为read(可读)，write(可写)。其中，readIdx标志可读区域起始位置，writeIdx标志可写区域起始位置。
-3. 从可读区域中读取一部分数据后，会有部分buffer区域空闲。
-4. 继续向数据区写入数据，可读区域变大，但是超出了buffer的大小。但是算上空白区域，buffer还可以容纳整个数据。
-5. 整体数据向前调整。
-6. 继续写入数据，但是这次算上空白区域也无法满足数据要求，则扩容。
 * **Acceptor**
   * Acceptor只作用于baseLoop
   * 其封装了socketfd与channel，用来监听新用户的连接以及执行相应的回调。
@@ -94,6 +82,16 @@ void EventLoopThread::threadFunc()
     * 本质使用的是内核通信机制eventfd_
     * 不同于socketpair(libevent)
   * loop中会有一个wakeup函数，调用该函数，则可以唤醒阻塞在epoll_ctl的函数
+* **Buffer**
+  * Buffer类封装了用户缓冲区，以及向其中读写数据等方法。
+![_buffer](https://github.com/nieting1997/TinyMuduo/blob/085da027cbef3f4058edbbeb6d63e9b8acaf4710/picture/_buffer.png)
+设计方法：
+1. 初始化状态。CheapPrepend记录整块数据的长度。
+2. 一段时间后，向buffer中写入数据。数据分区为read(可读)，write(可写)。其中，readIdx标志可读区域起始位置，writeIdx标志可写区域起始位置。
+3. 从可读区域中读取一部分数据后，会有部分buffer区域空闲。
+4. 继续向数据区写入数据，可读区域变大，但是超出了buffer的大小。但是算上空白区域，buffer还可以容纳整个数据。
+5. 整体数据向前调整。
+6. 继续写入数据，但是这次算上空白区域也无法满足数据要求，则扩容。
 ## 
 ## 工作流程
 * 服务器初始化
