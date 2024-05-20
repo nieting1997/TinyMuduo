@@ -6,25 +6,21 @@ muduo是陈硕开发的c++网络库。
 本人基于c11重构了muduo库中的重要组件，旨在学习其中良好的设计思想。
 ## 框架
 ![架构图](https://github.com/nieting1997/TinyMuduo/blob/085da027cbef3f4058edbbeb6d63e9b8acaf4710/picture/%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
-## 使用方法
-* 编程实例见example
-* sudo bash ./autobuild.sh
-![使用方法](https://github.com/nieting1997/TinyMuduo/blob/1afe3d6741c1172d395081a929b18e5da73cd742/picture/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%80%9A%E4%BF%A1.jpg)
-## 基础类
-
-* **InetAddress**
-  * 封装socket地址类型
+## 类
+* **Socket**
+  * 对linux socketfd的封装，其中有bind，listen，accept等方法。控制句柄的生存期。
 * **Channel** 
-  * 在io多路复用中，一个线程监视多个文件句柄。一旦其中某个句柄就绪，就能够通知对应的应用线程进行相应的读写操作。channel就是对其中文件句柄(文件描述符)的封装。
-  * Channel将文件描述符及该描述符对应的回调函数绑定在一起，方便调用。
-  * tie_: weak_ptr<void>: 用来跨线程判断该channel是否存在
+  * 通过面对对象的思想，将监听的fd，其感兴趣的事件，具体发生的事件以及各种事件对应的回调函数绑定到了一起。
 * **Poller**
   * 抽象了负责监听事件描述符以及返回发生的事件描述符的模块(epoll/poll)。
-  * 重构只支持epoll。
 * **EPollPoller**
   * 继承自Pollor抽象层，使用epoll实现多路监听复用。
-* **Socket**
-  * 对sockfd相关方法的封装，bind、accept、listen、shutdown四件套。
+* **EventLoop**
+  * EventLoop中封装了poller与channel，他不停调用poller中的poll方法来获取实际发生的事件(activeChannel)，然后调用activeChannel中保管的不同类型事件处理函数来处理实际发生的事件。
+* **Thread**
+  * 通过面对对象的思想，对线程Thread类进行封装，用于之后eventloop和thread进行绑定。
+* **EventLoopThread**
+  * 
 * **Buffer**
   * Buffer类封装了用户缓冲区，以及向其中读写数据等方法。
 ![_buffer](https://github.com/nieting1997/TinyMuduo/blob/085da027cbef3f4058edbbeb6d63e9b8acaf4710/picture/_buffer.png)
@@ -41,8 +37,6 @@ muduo是陈硕开发的c++网络库。
   * 当有新连接来时，会执行channel里绑定的handleread
     (handleread中其实绑定了TcpSever的newConnection
     TcpSever会挑选一个subLoop去处理该回调).
-* **EventLoop**
-  * EventLoop中封装了poller与channel，他不停调用poller中的poll方法来获取实际发生的事件(activeChannel)，然后调用activeChannel中保管的不同类型事件处理函数来处理实际发生的事件。
 ## one loop per thread + thread pool
 * one loop per thread是指每一个eventLoop都会绑定一个线程
 * Eventloop
@@ -166,3 +160,7 @@ void EventLoopThread::threadFunc()
 * 若关闭时，TcpConnection中有正在发送的数据，怎么保证该数据能发送完呢？
   * 采用了shared_from_this + 弱智能指针lock的方法，尝试提升为shared_ptr.
   * 若提升成功，则说明对象还存在。在接下来调用处理函数的过程中，能够保证对象一直存在(shared_ptr)，不被析构.
+## 使用方法
+* 编程实例见example
+* sudo bash ./autobuild.sh
+![使用方法](https://github.com/nieting1997/TinyMuduo/blob/1afe3d6741c1172d395081a929b18e5da73cd742/picture/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%80%9A%E4%BF%A1.jpg)
